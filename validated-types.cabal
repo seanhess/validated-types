@@ -18,6 +18,7 @@ library
   exposed-modules:
       Data.Validated.MaxLength
     , Data.Validated.EqLength
+    , Data.Validated.CharLength
   build-depends:
       base >= 4.7 && < 5
     , text
