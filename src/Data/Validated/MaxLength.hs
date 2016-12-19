@@ -5,7 +5,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
-module Data.Valided.MaxLength
+module Data.Validated.MaxLength
   ( MaxLength
   , maxLength
   , maxLengthDrop
