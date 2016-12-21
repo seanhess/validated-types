@@ -19,6 +19,7 @@ library
       Refined.Length
     , Refined.LessThanEq
     , Refined.Implies
+    , Refined.OnlyDigits
     , Data.CharLength
   build-depends:
       base >= 4.7 && < 5
