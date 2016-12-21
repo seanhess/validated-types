@@ -3,6 +3,9 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE DataKinds #-}
+{-# LANGUAGE ConstraintKinds #-}
+{-# LANGUAGE RankNTypes #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 module Refined.Length where
 
 import Refined (Predicate(..))
@@ -17,8 +20,9 @@ import GHC.TypeLits (Nat)
 data Length p
 
 instance (CharLength x, Predicate p Int) => Predicate (Length p) x where
-  validate p x =
-    validate p (charLength x)
+  validate _ x =
+    showString "Length of string: " <$>
+      validate (undefined :: p) (charLength x)
 
 
 type LengthEq (n :: Nat) =
@@ -26,5 +30,7 @@ type LengthEq (n :: Nat) =
 
 type LengthMax (n :: Nat) =
     Length (LessThanEq n)
+
+
 
 
