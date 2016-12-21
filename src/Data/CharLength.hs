@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Data.Validated.CharLength
+module Data.CharLength
   ( CharLength(..)
   ) where
 
