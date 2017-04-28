@@ -1,6 +1,6 @@
 name:                validated-types
-version:             0.1.0.0
-synopsis:            Type-level constraints on strings
+version:             0.1.1
+synopsis:            Type-level constraints on strings and other input
 description:         Please see README.md
 homepage:            https://github.com/seanhess/validated-types#readme
 license:             BSD3
